@@ -56,6 +56,8 @@ public class EmployeeController {
         }
     }
 
+    // Get employees by department.
+
     @GetMapping("/employees/dept/{deptCode}")
     public List<Employee> getEmployeeByDept(@PathVariable long deptCode){
         return employeeService.getEmployeeByDept(deptCode);
